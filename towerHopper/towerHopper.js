@@ -32,3 +32,13 @@ var array = [3,2,1,0,4];//return false
 // var array = [2,3,1,1,4]; // return true.
 var canHop = towerHopper(array);
 console.log(canHop);
+
+// function canJump(nums) {
+//   var lastPos = nums.length - 1;
+//   for (var i = nums.length - 1; i >= 0; i--) {
+//       if (i + nums[i] >= lastPos) {
+//           lastPos = i;
+//       }
+//   }
+//   return lastPos === 0;
+// }
