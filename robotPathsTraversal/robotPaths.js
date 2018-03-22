@@ -1,3 +1,10 @@
+var countPathsRecursive = function(n, m){
+  if(n == 1 || m == 1){
+      return 1;
+  }
+  return countPathsRecursive(n-1, m) + countPathsRecursive(n, m-1);
+}
+
 var robotPaths = function(m, n) {
   var matrix = Array(m).fill(Array(n));
   // var matrix = Array(m).fill(Array(n).fill(0));
