@@ -34,5 +34,5 @@ var printAllPaths = function(m, n) {
   return allPaths;
 };
 
-var allPaths = printAllPaths(3,3);
+var allPaths = printAllPaths(4,4);
 console.log(allPaths);

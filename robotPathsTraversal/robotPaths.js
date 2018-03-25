@@ -31,5 +31,5 @@ var robotPaths = function(m, n) {
   return matrix[m - 1][n - 1];
  };
 
-var count = robotPaths(4, 4);
+var count = robotPaths(3, 3);
 console.log(count);
