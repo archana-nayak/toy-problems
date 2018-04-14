@@ -28,8 +28,8 @@ var towerHopper = function(nums) {
   }
   return false;  
 };
-var array = [3,2,1,0,4];//return false
-// var array = [2,3,1,1,4]; // return true.
+// var array = [3,2,1,0,4];//return false
+var array = [2,3,1,1,4]; // return true.
 var canHop = towerHopper(array);
 console.log(canHop);
 //Bottom Up Approach without extra space
