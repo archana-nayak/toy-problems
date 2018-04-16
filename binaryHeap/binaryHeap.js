@@ -117,3 +117,17 @@ function sortKMessedArray(arr, k) {
 
 sortKMessedArray([1, 4, 5, 2, 3, 7, 8, 6, 10, 9], 2);
 //output = [1,2,3,4,5,6,7,8,9,10];
+
+let maxHeap = new BinaryHeap(function (a, b) {
+  return b - a;
+});
+[10, 3, 4, 8, 2, 9, 7, 1, 2, 6, 5].forEach(function (value) {
+  //console.log(value);
+  maxHeap.insert(value);
+});
+console.log(maxHeap);
+let sortedDesc = [];
+for (var i = 0; i < 11; i++) {
+ sortedDesc.push(maxHeap.removeRoot()); 
+}
+console.log(sortedDesc);
